@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-top: 50px;
+    }
+  </style>
+<body>
+	<div class="container ">
+		<h1 class="text-center mt-5 display-4">Key Generator</h1>
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-4">
+				<form>
+				<div class="form-group">
+					<label for="inputMssv">Số báo danh</label>
+					<input type="text" class="form-control" id="inputMssv" placeholder="Nhập số báo danh (B22105**)">
+				</div>
+				<button type="button" class="btn btn-primary btn-block" onclick="generateKey()">Tạo Key</button>
+				<div class="form-group mt-3">
+					<label for="inputKey">Key</label>
+					<input type="text" class="form-control" id="inputKey" readonly>
+				</div>
+				</form>
+			</div>
+		</div>
+		<footer class="mt-5">
+			<div class="text-center">
+				<p>&copy; 2023 @tritran01</p>
+				<p>Chi tiết liên hệ <a href="https://www.facebook.com/profile.php?id=100043838610548">Facebook</a>.</p>
+			</div>
+		</footer>
+	</div>
+	
+
+  <script>
+
+	function encodeStringToNumbers(str) {
+		var encodedStr = "";
+
+		for (var i = 0; i < str.length; i++) {
+			encodedStr += str.charCodeAt(i).toString();
+		}
+
+		return encodedStr;
+	}
+
+    function generateKey() {
+		var mssv = document.getElementById("inputMssv").value;
+		var key = mssv;
+		document.getElementById("inputKey").value = encodeStringToNumbers(key).substring(6);;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "ASM Extension",
+  "version": "1.0",
+  "description": "Automatic Schedule Maker CTU",
+  "manifest_version": 3,
+  "content_scripts": [
+        {
+            "matches":["https://dkmh.ctu.edu.vn/htql/sinhvien/hindex.php"],
+            "js":["js/getdataid.js"]
+        },
+      {
+          "matches": ["https://dkmh.ctu.edu.vn/htql/*"],
+          "js": [
+              "js/jquery360.min.js",
+              "js/dataTables.min.js",
+              "js/chart.js",
+              "js/script.js"
+          ],
+          "css": ["css/style.css","css/style.min.css"]
+      }
+  ]
+}

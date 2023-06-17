@@ -1,0 +1,300 @@
+.btn-tkb{
+	border: none; 
+	width: 100%;
+	display: block; 
+	color: rgb(0, 0, 0); 
+	font-family: Tahoma, Arial, Verdana; 
+	font-weight: normal; 
+	font-style: normal; 
+	font-size: 9pt; 
+	text-decoration: none; 
+	cursor: pointer;
+}
+
+.btn-tkb:hover{
+	color: rgb(229, 15, 218);
+}
+
+.page-home {
+	width: 90%;
+	height: auto;
+	overflow: hidden; 
+}
+
+#el6 {
+	font-family: Arial;
+	font-size: 12px;
+	visibility: visible;
+	border-collapse: collapse;
+	white-space: nowrap;
+	padding: 5px;
+	height: 100%;
+	background: rgb(41, 176, 213);
+}
+
+.top-h-ct-left {
+	height: 5%;
+	border-radius: 5px;
+	background-color: #ccebf4;
+	color: rgb(29, 29, 29);
+	display: flex;
+  	justify-content: center; 
+  	align-items: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* thanh bar lọc */
+.slidecontainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	color: black;
+  }
+.slidecontainer p {
+	margin: 0px 0px;
+	font-weight: bold;
+}
+.slider-value {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#myRange-siso,
+#myRange-day {
+	width: 180px;
+}
+
+.xuly-value{
+	color: black;
+	font-size: 12px;
+}
+
+/* bảng thời khóa biểu*/
+
+.tkb_table_ {
+	height: 100%;
+	border-radius: 5px;
+	background-color: #ccebf4;
+}
+
+.tkb_table_ ._title_ {
+	height: 5%;
+	border-radius: 5px;
+	background-color: #95eee0e4;
+	text-align: center;
+}
+
+.tkb_table_ ._table_ {
+	height: auto;
+	border-radius: 5px;
+	background-color: #ccebf4;
+	margin-bottom: 5px;
+}
+
+.table-tkb {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* Thanh chọn */
+.live-show  {
+	height: auto;
+	border-radius: 5px;
+	background-color: #45dc84f5;
+	text-align: center;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+}
+  
+.pagination a {
+	color: black;
+	text-decoration: none;
+	padding: 8px 16px;
+	margin: 0 4px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+  
+.pagination a:hover {
+	background-color: #ddd;
+}
+  
+.pagination .active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.prev-btn, .next-btn {
+	cursor: pointer;
+}
+
+.bieudo {
+	display: none;
+}
+
+.status-bieudo{
+	cursor: pointer;
+}
+
+.status {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 5px;
+	background-color: red;
+}
+
+/* Tkb */
+.set-bg-0{
+	background-color: #4CAF50;
+	color: rgb(204, 20, 20);
+	padding: 8px;
+	border: 1px solid rgba(0, 0, 255, 0.69);
+}
+
+.table-tkb> tbody > tr > td{
+	background-color: #d7faf9f5;
+	padding: 3px;
+	color: black;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 255, 0.69);
+	cursor: pointer;
+}
+
+.table-tkb> tbody > tr > td:hover {
+	background-color: #afddfef5;
+}
+
+.table-tkb > tbody > tr > td:first-child {
+	font-weight: bold;
+}
+.table-tkb > tbody > tr > td:first-child:hover{
+	background-color: #d7faf9f5;
+}
+
+
+/*  */
+
+.table-data-cr {
+    margin: 20px;
+}
+  
+#myTable_wrapper {
+    margin-top: 20px;
+}
+  
+#courseFilter {
+    margin-right: 10px;
+}
+  
+#selectedCourseName {
+    margin-left: 10px;
+    font-weight: bold;
+}
+  
+table.dataTable {
+    width: 100%;
+    margin-top: 10px;
+    clear: both;
+    border-collapse: collapse;
+    text-align: center;
+}
+  
+table.dataTable thead th,
+table.dataTable tfoot th {
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+}
+  
+table.dataTable tbody td {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+}
+  
+table.dataTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+table.dataTable tbody tr:hover {
+    background-color: #a5f775;
+}
+  
+.dataTables_filter {
+    margin-top: 10px;
+}
+  
+.dataTables_length {
+    margin-top: 10px;
+}
+  
+.dataTables_info {
+    margin-top: 10px;
+}
+  
+.dataTables_paginate {
+    margin-top: 10px;
+}
+
+/* check key */
+
+.centered-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 16px;
+	border: 1px solid #b3b2b2a6;
+	background-color: #50c6ea84;
+	border-radius: 5px;
+  }
+  
+  .centered-input {
+	/* width: 100%; */
+	padding: 10px;
+	margin: 2px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1cb;
+	border-radius: 5px;
+	border: 1px solid rgba(121, 148, 155, 0.618);
+  }
+  
+  .custom-button {
+	padding: 7px 20px;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  .check-button {
+	background-color: #1fa933e1;
+	border: none;
+	border-radius: 5px;
+	color: black;
+  }
+  
+  .create-button {
+	background-color: #0696c6d7;
+	color: rgb(158, 26, 175);
+	border: none;
+	margin-top: 3px;
+	border-radius: 5px;
+  }
+  
+  .close-button {
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	font-weight: bold;
+  }
